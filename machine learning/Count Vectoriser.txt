@@ -1,0 +1,14 @@
+Count Vectoriser 
+
+s1 = "London Paris London"
+s2 = "Paris London Paris"
+
+        London      Paris
+s1          2       1
+s2          1       2
+
+Count matrix
+[[2, 1],
+[1, 2]]
+
+Cosine similarity

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Attack Predicton</title>
+</head>
+<body>
+    <div>
+    <h1> Enter the detail to check your heart </h1>
+        <form action="http://127.0.0.1:5000/diagnosis" method="POST">
+        <label>name: </label>
+        <input type="name" name = "name" placeholder="enter your name">
+        <br><br>
+        <label>Age: </label>
+        <input type="number" name = "Age" placeholder="enter your Age">
+        <br><br>
+        <label> cp: </label>
+        <input type="number" name = "cp" placeholder="enter your cp (chest pain) level">
+        <br><br>
+        <label>gender: </label>
+        <input type="number" name = "gender" placeholder="enter your gender">
+        <br><br>
+        <label>trestbps: </label>
+        <input type="number" name = "trestbps" placeholder="enter your trestbps">
+        <br><br>
+        <label>chol: </label>
+        <input type="number" name = "chol" placeholder="enter your cholestrol level">
+        <br><br>
+        <label>fbs: </label>
+        <input type="number" name = "fbs" placeholder="enter your fbs (fasting blood sugar)">
+        <br><br>
+        <label>restecg: </label>
+        <input type="number" name = "restecg" placeholder="enter your restecg">
+        <br><br>
+        <label>thalach: </label>
+        <input type="number" name = "thalach" placeholder="enter your thalsh ">
+        <br><br>
+        <label>slope: </label>
+        <input type="number" name = "slope" placeholder="enter your slope">
+        <br><br>
+
+        <input type="submit" name = "submit", value="submit">
+        <br><br>
+        <input type="reset" name="reset" value="reset">
+        <br><br>
+        {{prediction}}
+    </div>
+
+
+    <style>
+        body {
+            height: 100%;
+            background: url('static/doctor.jpg');
+            text-align: left;
+            padding: 0px;
+        }
+        #research {
+            font-size: 18px;
+            width: 100px;
+            height: 23px;
+            top: 23px;
+        }
+        #box{
+            border-radius: 60px;
+            border-color: lightgrey;
+            border-style: solid;
+            font-family: cursive;
+            text-align: left;
+            background-color: rgb(168,131,61);
+            font-size: medium;
+            position: absolute;
+            width: 70px;
+            bottom: 9%;
+            height: 850px;
+            right: 30%;
+            padding: 0px;
+            margin: 0px;
+            font-size: 14px;
+        }
+        #fuel{
+            width: 83px;
+            height: 43px;
+            text-align: left;
+            border-radius: 14px;
+            font-size: 20px;
+        }
+        #fuel:hover{
+            background-color: coral;
+        }
+        #research{
+            width: 99px;
+            height: 43px;
+            text-align: left;
+            border-radius: 14px;
+            font-size: 18px;
+        }
+        #research:hover{
+            background-color: coral;
+        }
+        #resea{
+            width: 99px;
+            height: 43px;
+            text-align: left;
+            border-radius: 14px;
+            font-size: 18px;
+        }
+        #resea:hover{
+            background-color: coral;
+        }
+        #sub{
+            width: 120px;
+            height: 43px;
+            text-align: left;
+            border-radius: 14px;
+            font-size: 18px;
+        }
+        #sub:hover{
+            background-color: darkcyan;
+
+        }
+        #first{
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: left;
+        }
+        #second{
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: left;
+        }
+        #third{
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: left;
+        }
+        #fourth{
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: left;
+        }
+    </style>
+</body>
+</html>

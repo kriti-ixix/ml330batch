@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Testing</title>
+    </head>
+
+    <body>
+        <form action="http://127.0.0.1:5000/predict">
+            <label>Name: </label>
+            <input type="text" name="name" placeholder="Enter your name">
+
+            <br> <br>
+
+            <label>Email: </label>
+            <input type="email" name="email" placeholder="Enter your email">
+
+            <br> <br>
+
+            <label>Password: </label>
+            <input type="password" name="password" placeholder="Enter your password">
+
+            <br> <br>
+
+            <label>Number: </label>
+            <input type="tel" name="number" placeholder="Enter your number">
+
+            <br> <br>
+
+            <label>ID: </label>
+            <input type="number" name="id" placeholder="Enter your id">
+
+            <br> <br>
+
+            <label>Gender: </label>
+            Male <input type="radio" name="gender" value="Male"> 
+            Female <input type="radio" name="gender" value="Female">
+
+            <br> <br>
+
+            <label>Course: </label>
+            Data Science <input type="checkbox" name="ds" value="DS">
+            Web Development <input type="checkbox" name="web" value="Web">
+
+            <br> <br>
+
+            <label>Range: </label>
+            <input type="range" name="range" min=0 max=5>
+
+            <br><br>
+
+            <label>DOB: </label>
+            <input type="date" name="dob">
+
+            <br> <br>
+
+            <label>Time: </label>
+            <input type="time" name="time">
+
+            <br> <br>
+
+            <label>Address: </label>
+            <textarea name="address"></textarea>
+
+            <br> <br>
+
+            <label>City: </label>
+            <select name="city">
+                <option value="">Choose your city</option>
+                <option value="Ludhiana">Ludhiana</option>
+                <option value="Jalandhar">Jalandhar</option>
+                <option value="Chandigarh">Chandigarh</option>
+            </select>
+
+            <br> <br>
+
+            <input type="submit" name="submit" value="Submit">
+            <input type="reset" name="reset" value="Reset">
+
+        </form>
+    </body>
+</html>

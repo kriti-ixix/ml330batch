@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Test</title>
+    </head>
+
+    <body>
+        <form action="http://127.0.0.1:5000/diagnosis" method="post">
+            
+            <label>BMI: </label>
+            <input type="number" name="bmi" placeholder="Enter your BMI" step=0.5>
+
+            <br><br>
+
+            <label>Age: </label>
+            <input type="number" name="age" placeholder="Enter your age">
+
+            <br><br>
+
+            <label>Glucose: </label>
+            <input type="number" name="glucose" placeholder="Enter your glucose">
+
+            <br><br>
+
+            <input type="submit" name="submit" value="Submit">
+
+            <br><br>
+
+            {{ prediction_output }} <br>
+            {{ probability_output }}
+
+
+        </form>
+    </body>
+
+</html>
